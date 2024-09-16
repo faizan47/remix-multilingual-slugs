@@ -5,7 +5,7 @@ This repository demonstrates how to handle **multilingual content** in [Remix Ru
 ## Why Use This Approach?
 
 - **No External Libraries**:  
-  No need for third-party libraries like `react-i18next` or `next-translate` for managing translations, keeping your project lightweight and free of extra dependencies.
+  No need for third-party libraries like `react-i18next` for managing translations, keeping your project lightweight and free of extra dependencies.
 
 - **Multilingual Slugs**:  
   URLs are translated along with the content, making them intuitive and SEO-friendly for each language.
