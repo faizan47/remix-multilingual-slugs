@@ -27,6 +27,33 @@ This repository demonstrates how to handle **multilingual content** in [Remix Ru
 - **Efficient Performance**:  
   Avoids the overhead of additional translation libraries, leading to a more efficient, performant app.
 
+## Main Configuration
+
+The main configuration for handling multilingual slugs is set up in the `vite.config.ts` file. This is where the route definitions for each language and slug are defined, ensuring that each language has its own URL structure while pointing to the same page component.
+
+```ts
+// Example of vite.config.ts
+import { defineConfig } from 'vite';
+import { vitePlugin as remix } from '@remix-run/dev';
+import { Slugs } from './src/types';
+
+export default defineConfig({
+  plugins: [
+    remix({
+      routes(defineRoutes) {
+        return defineRoutes(route => {
+          route('/:lang/a-propos', 'routes/about.tsx');
+          route('/:lang/over-ons', 'routes/about.tsx');
+          route('/:lang/about', 'routes/about.tsx');
+        });
+      }
+    })
+  ]
+});
+```
+
+This configuration dynamically links the correct language slug to the respective route, ensuring that URLs are SEO-friendly and language-specific without duplicating components.
+
 ## Demo
 
 Check out the [live demo](https://remix-multilingual-slugs-cpmektga0-faizan47s-projects.vercel.app/).
