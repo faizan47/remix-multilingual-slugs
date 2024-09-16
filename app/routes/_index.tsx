@@ -35,7 +35,7 @@ export default function Index() {
       </div>
 
       <div className="mt-8 text-gray-600 text-center">
-        <p>All routes are rendered using the same file</p>
+        <p>Above routes are rendered from the same file</p>
         <p className="italic">
           <pre>app/pages/about.tsx</pre>
         </p>
