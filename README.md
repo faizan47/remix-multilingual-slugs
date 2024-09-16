@@ -1,40 +1,28 @@
-# Welcome to Remix!
+# Multilingual Content with Dynamic Slugs in Remix Run
 
-- 📖 [Remix docs](https://remix.run/docs)
+This repository demonstrates how to handle **multilingual content** in [Remix Run](https://remix.run/), where the final URL changes based on the language (e.g., `/en/about`, `/fr/a-propos`, `/nl/over-ons`), while reusing the same component for each page across all languages.
 
-## Development
+## Why Use This Approach?
 
-Run the dev server:
+- **No External Libraries**:  
+  No need for third-party libraries like `react-i18next` for managing translations, keeping your project lightweight and free of extra dependencies.
 
-```shellscript
-npm run dev
-```
+- **Multilingual Slugs**:  
+  URLs are translated along with the content, making them intuitive and SEO-friendly for each language.
 
-## Deployment
+- **Simple File Structure**:  
+  A centralized logic handles all translations, reducing code duplication and making it easier to maintain as you scale.
 
-First, build your app for production:
+- **Type Safety**:  
+  Strict type checking for both languages and slugs ensures you only use valid combinations, preventing errors at compile-time.
 
-```sh
-npm run build
-```
+## Key Benefits:
 
-Then run the app in production mode:
+- **SEO-Friendly**:  
+  Translated URLs (e.g., `/fr/a-propos` instead of `/about`) enhance both user experience and search engine visibility.
 
-```sh
-npm start
-```
+- **Maintainability**:  
+  Centralized components make it easy to add new languages or modify content without duplicating logic across multiple files.
 
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+- **Efficient Performance**:  
+  Avoids the overhead of additional translation libraries, leading to a more efficient, performant app.
