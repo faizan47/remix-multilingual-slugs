@@ -56,4 +56,4 @@ This configuration dynamically links the correct language slug to the respective
 
 ## Demo
 
-Check out the [live demo](https://remix-multilingual-slugs-cpmektga0-faizan47s-projects.vercel.app/).
+Check out the [live demo](https://remix-multilingual-slugs-cpmektga0-faizan47s-projects.vercel.app).
