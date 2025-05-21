@@ -1,6 +1,6 @@
 # Multilingual Content with Dynamic Slugs in Remix Run
 
-This repository demonstrates how to handle **multilingual content** in [Remix Run](https://remix.run/), where the final URL changes based on the language (e.g., `/en/about`, `/fr/a-propos`, `/nl/over-ons`), while reusing the same component for each page across all languages.
+This repository demonstrates how to handle **multilingual content** in [Remix Run](https://remix.run/), where the final URL changes based on the language (e.g., `/en/about`, `/fr/a-propos`, `/nl/over-ons`), while reusing the same component for each page across all languages. This is one of the most simplest methods of having a multilingual remix.run website.
 
 ## Why Use This Approach?
 
@@ -56,4 +56,4 @@ This configuration dynamically links the correct language slug to the respective
 
 ## Demo
 
-Check out the [live demo](https://remix-multilingual-slugs-cpmektga0-faizan47s-projects.vercel.app).
+Check out the [live demo](https://remix-multilingual-slugs.vercel.app/).
